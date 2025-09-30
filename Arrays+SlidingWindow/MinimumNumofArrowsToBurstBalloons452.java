@@ -14,6 +14,7 @@ class Solution {
                 arrowAt = points[i][1];
             }
         }
-        return arrow;
+        
+        return arrow;        
     }
 }
