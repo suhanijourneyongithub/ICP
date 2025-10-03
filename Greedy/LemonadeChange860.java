@@ -1,7 +1,7 @@
 package Greedy;
 class Solution {
     public boolean lemonadeChange(int[] bills) {
-        int count5 = 0, count10 = 0, count20 = 0;
+        int count5 = 0, count10 = 0;
         for(int i = 0; i < bills.length; i++){
             if(bills[i] == 5){
                 count5++;
@@ -14,7 +14,6 @@ class Solution {
                 count5--;
             }
             else{
-                count20++;
                 if(count5 == 0){
                     return false;
                 }
